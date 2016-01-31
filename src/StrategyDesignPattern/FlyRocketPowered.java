@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public class FlyRocketPowered implements FlyBehavior{
 	public void fly() {

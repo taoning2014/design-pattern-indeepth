@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public class ModelDuck extends Duck{
 	public ModelDuck() {

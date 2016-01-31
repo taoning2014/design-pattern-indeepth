@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public class Quack implements QuackBehavior{
 	public void quack() {

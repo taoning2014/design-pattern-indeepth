@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public abstract class Duck {
 	FlyBehavior flyBehavior;

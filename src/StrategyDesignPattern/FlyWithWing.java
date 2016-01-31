@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public class FlyWithWing implements FlyBehavior{
 	public void fly() {

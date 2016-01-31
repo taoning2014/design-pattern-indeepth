@@ -1,4 +1,4 @@
-package DelegateDesignPattern;
+package StrategyDesignPattern;
 
 public class MallardDuck extends Duck{
 	public MallardDuck() {
