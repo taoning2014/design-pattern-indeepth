@@ -1,7 +1,7 @@
 
 ### UML
 
-![UML](../../UML/Strategy.png)
+![UML](../../UML/StrategyUML.png)
 
 ### Composition
 
