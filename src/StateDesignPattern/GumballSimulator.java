@@ -3,17 +3,14 @@ package StateDesignPattern;
 public class GumballSimulator {
 
 	public static void main(String[] args) {
-		GumballMachine gumballMachine = new GumballMachine(5);
+		GumballMachine gumballMachine = new GumballMachine(100);
 		
-		gumballMachine.insertQuater();
-		gumballMachine.turnCrank();
-		
-		gumballMachine.insertQuater();
-		gumballMachine.turnCrank();
-		
-		gumballMachine.insertQuater();
-		gumballMachine.ejectQuarter();
-		gumballMachine.turnCrank();
+		for (int i = 0; i < 20; i++) {
+			gumballMachine.insertQuater();
+			gumballMachine.turnCrank();
+			System.out.println(gumballMachine.getCount());
+			System.out.println("");
+		}
 	}
 
 }

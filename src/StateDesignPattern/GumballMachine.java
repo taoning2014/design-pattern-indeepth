@@ -2,19 +2,21 @@ package StateDesignPattern;
 
 public class GumballMachine {
 
-	State soldOutState;
 	State noQuarterState;
 	State hasQuarterState;
 	State soldState;
+	State winnerState;
+	State soldOutState;
 	
 	State state = soldOutState;
 	int count = 0;
 	
 	public GumballMachine(int numGumballs) {
-		soldOutState = new SoldOutState(this); 
 		noQuarterState = new NoQuarterState(this);
 		hasQuarterState = new HasQuarterState(this);
 		soldState = new SoldState(this);
+		winnerState = new WinnerState(this);
+		soldOutState = new SoldOutState(this); 
 		count = numGumballs;
 		
 		if (numGumballs > 0) {
@@ -50,19 +52,23 @@ public class GumballMachine {
 		return count;
 	} 
 	
-	public State getSoldOutState() {
-		return soldOutState;
-	}
-	
-	public State getSoldState() {
-		return soldState;
-	}
-	
 	public State getNoQuarterState() {
 		return noQuarterState;
 	}
 	
 	public State getHasQuarterState() {
 		return hasQuarterState;
+	}
+	
+	public State getSoldState() {
+		return soldState;
+	}
+	
+	public State getWinnerState() {
+		return winnerState;
+	}
+	
+	public State getSoldOutState() {
+		return soldOutState;
 	}
 }
