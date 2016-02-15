@@ -1,12 +1,12 @@
-package ObserverDesignPattern;
+package ObserverDesignPatternPartOne;
 
-public class CurrentConditionsDisplay implements Observer, DisplayElement{
+public class ForecastDisplay implements Observer, DisplayElement{
 
 	private float temperature;
 	private float humidity;
 	private Subject weatherData;
 
-	public CurrentConditionsDisplay(Subject weatherData) {
+	public ForecastDisplay(Subject weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
@@ -18,7 +18,7 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement{
 	}
 	
 	public void display() {
-		System.out.println("Current conditions: " + temperature
+		System.out.println("Forecast: " + temperature
 				+ "F degress and " + humidity + "% humidity");
 	}
 

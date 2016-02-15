@@ -1,12 +1,12 @@
-package ObserverDesignPattern;
+package ObserverDesignPatternPartOne;
 
-public class ForecastDisplay implements Observer, DisplayElement{
+public class StatisticsDisplay implements Observer, DisplayElement{
 
 	private float temperature;
 	private float humidity;
 	private Subject weatherData;
 
-	public ForecastDisplay(Subject weatherData) {
+	public StatisticsDisplay(Subject weatherData) {
 		this.weatherData = weatherData;
 		weatherData.registerObserver(this);
 	}
@@ -18,7 +18,7 @@ public class ForecastDisplay implements Observer, DisplayElement{
 	}
 	
 	public void display() {
-		System.out.println("Forecast: " + temperature
+		System.out.println("Statistics: " + temperature
 				+ "F degress and " + humidity + "% humidity");
 	}
 

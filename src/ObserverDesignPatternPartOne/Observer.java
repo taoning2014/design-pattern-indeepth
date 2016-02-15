@@ -1,4 +1,4 @@
-package ObserverDesignPattern;
+package ObserverDesignPatternPartOne;
 
 public interface Observer {
 	public void update(float temp, float humidity, float pressure);
